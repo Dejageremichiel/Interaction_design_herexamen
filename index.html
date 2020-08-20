@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID 19 - Worldwide</title>
+    <link rel="stylesheet" href="css/screen.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <script src="script/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+    <div class="c-grid">
+        <img class="c-covid-img" src="img/covid.png">
+        <img class="c-covid-img__mobile" src="img/covid.png">
+        <h1 class="c-title">
+            Coronavirus Covid 19
+        </h1>
+    </div>
+    <div class="c-card">
+        <div class="c-dashboard c-dashboard__header">
+            <div class="c-dashboard__item__left">
+                <div class="c-center">
+                    <button class="c-button__cases js-cases">Total cases</button>
+                    <button class="c-button__deaths js-deaths">Total deaths</button>
+                </div>
+            </div>
+            <div class="c-dashboard__item__right">
+                <div class="c-center">
+                    <span class="c-select">
+                        <select class="c-select__input js-country" name="select1" id="select1">
+                            <!--<option class="u-bold" value="one-year">1 year</option>-->
+                        </select>
+                        <svg class="c-select__symbol" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M7,10l5,5,5-5Z" />
+                        </svg>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="c-dashboard">
+            <div class="c-dashboard__item">
+                <div id='chart_parent' class="c-chart">
+                    <canvas id="chart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="c-footer">
+        by Michiel Dejagere
+    </footer>
+</body>
+</html>
